@@ -1,0 +1,44 @@
+.header-height{
+    height: 7vh;
+}
+
+.message-height{
+    height: 72vh;
+    overflow-y: scroll;
+}
+
+@include media-breakpoint-up(lg){
+    .header-height{
+        height: 7vh;
+    }
+    
+    .message-height{
+        height: 85vh;
+        overflow-y: scroll;
+    }
+}
+
+.chatbubble{
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    width: 60%;
+    border-radius: 0.7em;
+}
+
+.my-bubble{
+    border-top-right-radius: 0em;
+    background-color: $dark;
+    border: 0.15em solid $dark;
+    color: $light;
+}
+
+.others-bubble{
+    border-top-left-radius: 0em;
+    background-color: white;
+    border: 0.15em solid $light;
+    color: $dark;
+}
+
+.pointer_cursor{
+    cursor: pointer;
+}

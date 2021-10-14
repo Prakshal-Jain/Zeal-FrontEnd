@@ -1,0 +1,6 @@
+.map_content {
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.map_content path {fill: transparent; stroke: gray; cursor: pointer;}

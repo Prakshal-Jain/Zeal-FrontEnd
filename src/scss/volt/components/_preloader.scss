@@ -1,0 +1,19 @@
+.preloader {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    @include transition(height .3s);
+
+    &.show {
+        height: 0;
+
+        .loader-element {
+            display: none !important;
+        }
+    }
+}
